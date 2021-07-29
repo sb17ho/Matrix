@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="CalculatorGUI.TransposeController">
+
+    <top>
+        <GridPane
+                prefHeight="300.0" prefWidth="490.0" alignment="CENTER_LEFT" vgap="10" hgap="10">
+
+            <padding>
+                <Insets left="30"/>
+            </padding>
+
+            <TextField fx:id="mmA1" prefWidth="50" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+            <TextField fx:id="mmA2" prefWidth="50" GridPane.columnIndex="4" GridPane.rowIndex="0"/>
+            <TextField fx:id="mmA3" prefWidth="50" GridPane.columnIndex="5" GridPane.rowIndex="0"/>
+            <TextField fx:id="mmA4" prefWidth="50" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+            <TextField fx:id="mmA5" prefWidth="50" GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+            <TextField fx:id="mmA6" prefWidth="50" GridPane.columnIndex="5" GridPane.rowIndex="1"/>
+            <TextField fx:id="mmA7" prefWidth="50" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+            <TextField fx:id="mmA8" prefWidth="50" GridPane.columnIndex="4" GridPane.rowIndex="2"/>
+            <TextField fx:id="mmA9" prefWidth="50" GridPane.columnIndex="5" GridPane.rowIndex="2"
+                       onKeyReleased="#onLastValueEntered"/>
+
+            <Text text="=" fx:id="mmEquate" GridPane.columnIndex="6" GridPane.rowIndex="1"/>
+
+            <TextField fx:id="mmR1" prefWidth="50" GridPane.columnIndex="7" GridPane.rowIndex="0" editable="false"
+                       maxWidth="50"/>
+            <TextField fx:id="mmR2" prefWidth="50" GridPane.columnIndex="8" GridPane.rowIndex="0" editable="false"
+                       maxWidth="50"/>
+            <TextField fx:id="mmR3" prefWidth="50" GridPane.columnIndex="9" GridPane.rowIndex="0" editable="false"
+                       maxWidth="50"/>
+            <TextField fx:id="mmR4" prefWidth="50" GridPane.columnIndex="7" GridPane.rowIndex="1" editable="false"
+                       maxWidth="50"/>
+            <TextField fx:id="mmR5" prefWidth="50" GridPane.columnIndex="8" GridPane.rowIndex="1" editable="false"
+                       maxWidth="50"/>
+            <TextField fx:id="mmR6" prefWidth="50" GridPane.columnIndex="9" GridPane.rowIndex="1" editable="false"
+                       maxWidth="50"/>
+            <TextField fx:id="mmR7" prefWidth="50" GridPane.columnIndex="7" GridPane.rowIndex="2" editable="false"
+                       maxWidth="50"/>
+            <TextField fx:id="mmR8" prefWidth="50" GridPane.columnIndex="8" GridPane.rowIndex="2" editable="false"
+                       maxWidth="50"/>
+            <TextField fx:id="mmR9" prefWidth="50" GridPane.columnIndex="9" GridPane.rowIndex="2" editable="false"
+                       maxWidth="50"/>
+        </GridPane>
+    </top>
+
+    <bottom>
+        <HBox spacing="8" alignment="CENTER">
+            <padding>
+                <Insets bottom="10"/>
+            </padding>
+            <Button text="Calculate" fx:id="calculate"/>
+            <Button text="Close" fx:id="close"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>
