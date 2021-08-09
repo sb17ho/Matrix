@@ -15,11 +15,6 @@ import java.io.IOException;
 
 public class MethodSelectController {
 
-    private AddSubMMController addSubMMController;
-    private DetAndTraceController detAndTraceController;
-    private MultiplyConstController multiplyConstController;
-    private TransposeController transposeController;
-
     @FXML
     public ComboBox choiceBox;
 
@@ -48,7 +43,7 @@ public class MethodSelectController {
                 try {
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("AddSubMM.fxml"));
                     Parent root = loader.load();
-                    addSubMMController = loader.getController();
+                    AddSubMMController addSubMMController = loader.getController();
                     addSubMMController.setChoice(choice);
                     Stage stage = new Stage();
                     stage.initModality(Modality.APPLICATION_MODAL);
@@ -64,7 +59,7 @@ public class MethodSelectController {
                 try {
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("DetAndTrace.fxml"));
                     Parent root = loader.load();
-                    detAndTraceController = loader.getController();
+                    DetAndTraceController detAndTraceController = loader.getController();
                     detAndTraceController.setChoice(choice);
                     Stage stage = new Stage();
                     stage.initModality(Modality.APPLICATION_MODAL);
@@ -79,7 +74,7 @@ public class MethodSelectController {
                 try {
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("Transpose.fxml"));
                     Parent root = loader.load();
-                    transposeController = loader.getController();
+                    //TransposeController transposeController = loader.getController();
                     Stage stage = new Stage();
                     stage.initModality(Modality.APPLICATION_MODAL);
                     stage.setTitle("ABC");
@@ -93,7 +88,7 @@ public class MethodSelectController {
                 try {
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("MultiByCons.fxml"));
                     Parent root = loader.load();
-                    multiplyConstController = loader.getController();
+                    //MultiplyConstController multiplyConstController = loader.getController();
                     Stage stage = new Stage();
                     stage.initModality(Modality.APPLICATION_MODAL);
                     stage.setTitle("ABC");
