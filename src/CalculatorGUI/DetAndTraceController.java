@@ -50,14 +50,12 @@ public class DetAndTraceController {
     private final Map<String, String> variables = new HashMap<>();
 
     private double[][] array1;
-    private double[][] array2;
 
     private String choice;
 
     @FXML
     protected void initialize() {
         array1 = new double[3][3];
-        array2 = new double[3][3];
 
         close.setOnMouseClicked(v -> {
             Stage stage = (Stage) close.getScene().getWindow();

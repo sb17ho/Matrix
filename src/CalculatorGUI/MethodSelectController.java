@@ -16,7 +16,7 @@ import java.io.IOException;
 public class MethodSelectController {
 
     @FXML
-    public ComboBox choiceBox;
+    public ComboBox<String> choiceBox;
 
     @FXML
     public Button inputMatrix;
